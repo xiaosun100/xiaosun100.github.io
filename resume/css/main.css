@@ -1,0 +1,398 @@
+/* public */
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+    z-index: 0;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: normal;
+}
+
+
+/* first page */
+
+#block-firstPage {
+    height: 100%;
+    width: 100%;
+    background-color: #22B573;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+.blockTitle {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#fstPage-down {
+    position: absolute;
+    bottom: 16px;
+    height: 18px;
+    width: 100%;
+}
+
+#fstPage-down a {
+    display: block;
+    height: 18px;
+    width: 32px;
+    margin: 0 auto;
+    background: url(../img/down.png) no-repeat center
+}
+
+
+/* nav */
+
+#block-nav {
+    position: relative;
+    top: 0;
+    height: 52px;
+    background-color: #42474B;
+    color: white;
+}
+
+#block-nav a {
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 52px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+}
+
+#block-nav a:hover {
+    color: #999;
+}
+
+#logo {
+    display: inline-block;
+}
+
+
+/* block-intro */
+
+#block-intro {
+  height: 100%;
+    width: 100%;
+    background-color: #1889C5;
+    padding: 60px 0 100px;
+}
+
+#intro-icon {
+    height: 300px;
+    width: 100%;
+    line-height: 300px;
+    /*background-color: red;*/
+}
+
+.link {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    text-indent: -9999em;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s ease-in;
+}
+
+.link:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#link-github {
+    background: url(../img/github.png) no-repeat center;
+    margin-left: 76px;
+
+
+}
+
+#link-linkedin {
+    background: url(../img/linkedin.png) no-repeat center;
+    margin-left: 76px;
+}
+
+#myPhoto {
+    height: 200px;
+    width: 200px;
+    /*background-color: red;*/
+
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0 0 78px;
+}
+
+#link-blog {
+    background: url(../img/blog.png) no-repeat center;
+    margin-left: 78px;
+}
+
+#link-email {
+    background: url(../img/email.png) no-repeat center;
+    margin-left: 76px;
+}
+
+#intro-text {
+    display: inline-block;
+    margin: 80px 0 0 130px;
+    color: white;
+}
+
+#intro-text li {
+    height: 30px;
+}
+
+#intro-text ul li a {
+    display: inline-block;
+}
+
+#intro-text ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+#intro-text ul li span {
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+}
+
+#intro-text div {
+    display: inline-block;
+    width: 550px;
+    margin-left: 120px;
+}
+
+#intro-text>div>p {
+    margin-bottom: 26px;
+}
+
+
+/* block-skill */
+
+#block-skill {
+    height: 100%;
+    width: 100%;
+    background-color:#82142f;
+    color: #FFFFFF;
+    padding-bottom: 160px;
+}
+
+#block-skill .skill-title {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#block-skill .skills {
+    height: auto;
+    width: auto;
+}
+
+#block-skill ul {
+    display: inline-block;
+    height: auto;
+    width: 210px;
+    margin: 80px 0 0 56px;
+    border: 2px solid #FFFFFF;
+    font-size: 20px;
+    font-family: "Microsoft YaHei light";
+    text-align: center;
+    vertical-align: top;
+}
+
+#block-skill li {
+    height: 36px;
+    line-height: 36px;
+}
+
+#block-skill li:first-child {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+#block-skill li:hover {
+    background-color: #FFFFFF;
+    color: #333;
+    cursor: default;
+}
+
+
+/* block-workEXP */
+
+#block-workEXP {
+    height: 100%;
+    width: 100%;
+    background-color: #26B1B6;
+    color: #e7e7e7;
+    padding: 160px 0
+}
+
+#block-workEXP .work-title {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#block-workEXP .workEXP-main {
+    height: auto;
+    width: auto;
+    margin: 100px 0 0 60px;
+}
+
+#block-workEXP .timebox {
+    margin-left: 194px;
+    font-size: 29px;
+}
+
+#block-workEXP .timebox li {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#block-workEXP .time1 {
+    margin-left: 110px
+}
+
+#block-workEXP .timeline {
+    height: 27px;
+    width: 868px;
+    margin-left: 42px;
+    background: url(../img/timeline.png) no-repeat center;
+}
+
+#block-workEXP .workbox {
+    margin-left: 194px;
+}
+
+#block-workEXP .workbox li {
+    display: inline-block;
+    width: 310px;
+    vertical-align: top;
+}
+
+#block-workEXP .workbox li label {
+    display: block;
+}
+
+#block-workEXP .workbox .work-place {
+    font-size: 26px;
+    font-weight: bold
+}
+
+#block-workEXP .workbox .work-position {
+    font-size: 20px;
+}
+
+#block-workEXP .workbox .work-do {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* block-prjEXP */
+
+#block-prjEXP {
+    padding: 50px 0 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #129DE7;
+    color: #FFFFFF;
+}
+
+#block-prjEXP .prjEXP-title {
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#block-prjEXP .prjs {
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#block-prjEXP .prj {
+    float: left;
+    height: auto;
+    width: 240px;
+    margin-left: 105px;
+}
+
+#block-prjEXP .prj .prj-logo {
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+#block-prjEXP .prj .prj-title {
+    height: auto;
+    width: 240px;
+    margin: 20px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+#block-prjEXP .prj .prj-intro {
+    height: auto;
+    width: 240px;
+    font-size: 20px;
+    text-indent: 1em
+}
+
+#block-prjEXP #prj-helpmechoose .prj-logo {
+    background: #ED6461 url(../img/helpmechoose.png) no-repeat center;
+    border: 4px solid #FFFFFF;
+}
+
+#block-prjEXP #prj-navFixed .prj-title a:hover {
+    border-bottom: 3px solid white;
+}
+
+#block-prjEXP #prj-navFixed .prj-logo {
+    background: #9C58B6 url(../img/navFixed.png) no-repeat center;
+    border: 4px solid #FFFFFF;
+}
+
+#block-prjEXP #prj-integralSystem .prj-logo {
+    background: #16CC70 url(../img/integralSystem.png) no-repeat center;
+    border: 4px solid #FFFFFF;
+}
+
+
+/* block-wantMore */
+
+#block-wantMore {
+    width: 100%;
+    background-color: #60af2a;
+    color: #fff;
+}
+
+#block-wantMore>p {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* 百度统计 */
+
+body>a {
+    height: 0;
+}
