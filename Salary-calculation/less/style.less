@@ -1,0 +1,50 @@
+// out:../css/style.css,compress:true
+@bg-color:orange;
+html,body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  background-color: @bg-color;
+}
+.form{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.form-ctrl{
+  display: inline-block;
+  margin-left: 10px;
+}
+.form-ctrl label:after{
+  content: ":";
+}
+.form-ctrl input{
+  height: 24px;
+  width:120px;
+}
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  height: 26px;
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  background-color: red;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+}
+.result{
+  display: block;
+  margin: 10px;
+}
+.result-item{
+  height: 50px;
+  line-height: 50px;
+}
+.result-item span{
+  color: #666666;
+}
+.result-item span:after{
+  content: "元";
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>工资计算器</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="form">
+    <div class="form-ctrl">
+      <label>基本工资</label>
+      <input placeholder="基本工资" type="number" id="jiBen" value="">
+    </div>
+
+    <div class="form-ctrl">
+      <label>绩效</label>
+      <input placeholder="绩效" type="text" id="jiXiao" value="">
+    </div>
+
+    <div class="form-ctrl">
+      <label>奖金</label>
+      <input placeholder="奖金" type="text" id="jiangJin" value="">
+    </div>
+    <div class="form-ctrl">
+      <button class="btn" id="btn">确定</button>
+    </div>
+  </section>
+
+  <sction class="result">
+    <div class="result-item">
+      <label>计算基数</label>
+      <span id="sJiBen">个人基本工资作为基数</span>
+    </div>
+    <div class="result-item">
+      <label>养老保险</label>
+      <span id="sYangLao">个人缴纳8%</span>
+    </div>
+    <div class="result-item">
+      <label>医疗保险</label>
+      <span id="sYiLiao">个人缴纳2%</span>
+    </div>
+    <div class="result-item">
+      <label>失业保险</label>
+      <span id="sShiYe">个人缴纳0.5%</span>
+    </div>
+    <div class="result-item">
+      <label> 工伤保险</label>
+      <span>0</span>
+    </div>
+    <div class="result-item">
+      <label>生育保险</label>
+      <span>0</span>
+    </div>
+    <div class="result-item">
+      <label>住房公积金</label>
+      <span id="sGongJiJin">个人缴纳7%</span>
+    </div>
+    <div class="result-item">
+      <label>缴税基数</label>
+      <span id="sShuiJiShu"></span>
+    </div>
+    <div class="result-item">
+      <label>扣税</label>
+      <span id="sKouShui"></span>
+    </div>
+    <div class="result-item">
+      <label>实际所得</label>
+      <span id="sShouRu"></span>
+    </div>
+  </sction>
+  <script src="js/js.js"></script>
+</body>
+</html>
