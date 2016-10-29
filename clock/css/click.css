@@ -1,0 +1,112 @@
+html,body{
+  height: 100%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container{
+  width: 600px;
+  height: 600px;
+  /*border-radius: 50%;*/
+  /*border: solid 20px;*/
+  /*border-style: double;*/
+  /*background-color: black;*/
+  position: relative;
+
+}
+.container div{
+  animation-name: do-round;
+  animation-timing-function: linear;/*设置动画执行速度曲线，也就是动画样式*/
+  animation-iteration-count: infinite;/*运行次数*/
+  /*animation-duration: 300s;*/
+  /*执行的周期*/
+}
+img{
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.miaozhen{
+  width: 600px;
+  height: 4px;
+  position: absolute;
+  left: 0px;
+  top: 298px;
+  align-items: center;
+  border-radius: 10%;
+  animation-duration: 60s;
+}
+.miaozhen span{
+  width: 300px;
+  height: 4px;
+  position: absolute;
+  left: 50px;
+  border-bottom-left-radius:100%;
+
+
+  position: absolute;
+  background-color: black;
+}
+
+.fen{
+  width: 600px;
+  height: 8px;
+  position: absolute;
+  left: 0px;
+  top: 298px;
+  align-items: center;
+  border-radius: 40%;
+  animation-duration: 3600s;
+
+}
+.fen span{
+  width: 280px;
+  height: 8px;
+  position: absolute;
+  left: 70px;
+  border-bottom-left-radius:100%;
+  position: absolute;
+  background-color: black;
+}
+
+.shi{
+  width: 600px;
+  height: 10px;
+  position: absolute;
+  left: 0px;
+  top: 297px;
+  animation-duration: 43200s;
+  align-items: center;
+}
+.shi span{
+  width: 250px;
+  height: 10px;
+  position: absolute;
+  left: 100px;
+  border-bottom-left-radius:100%;
+  position: absolute;
+  background-color: black;
+}
+@keyframes do-round {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.point{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 285px;
+  top: 285px;
+
+}
