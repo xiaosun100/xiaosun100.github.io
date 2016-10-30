@@ -1,0 +1,159 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑",Helvetica, arial;
+    font-size: 16px;
+}
+body{
+}
+::selection {
+    background: #1d9d74;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #1d9d74;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #333;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.browser {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFF9D7;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    z-index: 10;
+}
+
+.browser a {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.browser p {
+    text-align: center;
+}
+
+.browser span {
+    color: #ff6933;
+}
