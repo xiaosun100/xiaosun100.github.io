@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>打地鼠</title>
+        <script src="jquery.js"></script>
+        <style>
+            body{
+                margin: 0;
+                background-image: url(image/bg.jpg);
+                /*更改鼠标样式  可以用图片，也可以设值，但是用
+                图片链接当鼠标样式，必须要在后边加上auto*/
+                cursor: url(image/cursor.png), auto;
+                /*禁止用户选中HTML文档中的内容*/
+                -moz-user-select: none; 
+            }
+            table{
+                width: 600px;
+                height: 600px;
+                margin: 0 auto;
+            }
+            td{
+                height: 150px;
+                background-image: url(image/hole.png);
+                background-size: 120px 50px;
+                background-repeat: no-repeat;
+                background-position: center bottom; 
+                text-align: center;
+                /*垂直对齐方式 可跟top上端对齐 middle居中对齐 bottom向下对齐*/
+                vertical-align: bottom;
+            }
+            img{
+                width: 80px;
+                height: 0;  
+                position: relative;
+                bottom: 8px;
+                animation-timing-function: linear;
+                /*当动画结束时,保持当前状态,不回复到开始状态*/
+                animation-fill-mode: both;
+            }
+            .mouseUp{
+                animation-name: up;
+                animation-duration: 0.3s;
+            }
+            .mouseDown{
+                animation-name: down;
+                animation-duration: 0.1s;
+            }
+            @keyframes down{
+                0%{
+                    height: 70px;
+                }
+                100%{
+                    height: 0;
+                }
+            }
+            @keyframes up{
+                0%{
+                    height: 0;
+                }
+                100%{
+                    height: 70px;
+                }
+            }
+            #score{
+                font-size: 30px;
+                position: absolute;
+                top: 50px;
+                background-color: rgba(100,100,100,0.6);
+                line-height: 50px;
+                padding-left: 10px;
+                padding-right: 15px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <audio src="audio/music.mp3" autoplay loop></audio>
+        <audio id="dazhong"></audio>
+        <p id="score">得分:0</p>
+        <table>
+            <tr>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+            </tr>
+            <tr>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+            </tr>
+            <tr>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+            </tr>
+            <tr>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+                <td><img src="image/mouse.png"></td>
+            </tr>
+        </table>
+        <script src="game.js"></script>
+    </body>
+</html>
