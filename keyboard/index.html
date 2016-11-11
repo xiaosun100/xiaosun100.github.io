@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>打字游戏</title>
+    <!-- 引入外部的css 文件  -->
+    <link rel="stylesheet" href="animate.css">
+
+    <style>
+        body{
+            height: 100%;
+            margin: 0;
+            background-color: yellow;
+            display: flex;
+            /*水平方向居中*/
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #char{
+            font-size: 400px;
+        }
+        #result{
+            font-size: 30px;
+        }
+        #char.error{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="char">Z</div>
+        <div id="result">请在键盘上按下屏幕上显示的字母</div>
+    </main>
+
+    <!--引入js文件-->
+    <script src="game.js"></script>    
+</body>
+
+</html>
